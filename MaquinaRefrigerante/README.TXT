@@ -1,12 +1,15 @@
 ------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
+
+SIMULAÇAO BÁSICA DE UMA MAQUINA DE REFRIGERANTE PARA EXEMPLIFICAR
+CONCEITOS DE ORIENTAÇAO A OBJETOS
 ------------------------------------------------------------------------
 
+
 PROJECT TITLE:
+ MAQUINA DE REFRIGERANTES
 PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
+ EXEMPLIFICAR VISUALMENTE ATIVIDADE PRATICA
+VERSION or DATE:01/DEZ/2013
+AUTHORS:ADOLFO LUCAS E ALEJANDRO FELIPE
 USER INSTRUCTIONS:
+ ARRASTAR AS MOEDAS PARA O CENTRO DA MÁQUINA E CLICAR EM UMA DAS OPÇOES
