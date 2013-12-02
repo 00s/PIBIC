@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Estoque()
+comment1.params=botao
+comment1.target=Refrigerante\ getRefrigerante(int)
+comment2.params=botao
+comment2.target=Refrigerante\ entregarRefrigerante(int)
+comment3.params=
+comment3.target=void\ recarregarEstoque()
+numComments=4

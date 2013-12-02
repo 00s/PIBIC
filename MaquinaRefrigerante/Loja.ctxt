@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Loja()
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ gerenciarBotoes()
+comment3.params=moeda
+comment3.target=void\ adicionarMoeda(Loja.Moedas)
+comment4.params=button
+comment4.target=void\ ouvirBotao(Button)
+numComments=5

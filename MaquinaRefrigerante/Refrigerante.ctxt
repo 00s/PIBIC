@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment1.params=nome\ preco
+comment1.target=Refrigerante(java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getNome()
+comment3.params=
+comment3.target=int\ getPreco()
+comment4.params=preco
+comment4.target=void\ setPreco(int)
+numComments=5

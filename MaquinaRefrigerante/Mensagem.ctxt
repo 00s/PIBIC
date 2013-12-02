@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ desligada()
+comment1.params=
+comment1.target=java.lang.String\ ligada()
+comment2.params=maquina
+comment2.target=java.lang.String\ saldoCliente(MaquinaRefrigerante)
+comment3.params=
+comment3.target=java.lang.String\ saldoInsuficiente()
+comment4.params=
+comment4.target=java.lang.String\ refriIndisponivel()
+comment5.params=r
+comment5.target=java.lang.String\ compra(Refrigerante)
+numComments=6
