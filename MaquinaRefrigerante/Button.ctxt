@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=msg\ id
-comment0.target=Button(java.lang.String,\ int)
+comment0.params=msg\ fontSize\ id
+comment0.target=Button(java.lang.String,\ float,\ int)
 comment1.params=
 comment1.target=int\ getID()
 numComments=2

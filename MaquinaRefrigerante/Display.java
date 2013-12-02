@@ -4,16 +4,25 @@ import java.awt.Font;
 
 public class Display  extends Actor
 {
-   String imagem = "fundoDisplay.png";
+   String imagem = "squareButton.png";
    String mensagem;
+   float fontSize = 24.0F;
 
-    public Display(String mensagem)
+    public Display(String imagem, String mensagem , float fontSize)
     {
+        if(imagem !=null)
+            this.imagem = imagem;
+            
+        this.setImage(this.imagem);
+        this.getImage().setTransparency(50);
+        if (fontSize != 0)
+           this.fontSize = fontSize;
+           
         this.mensagem = mensagem;
  
         GreenfootImage image = this.getImage();
         Font font = image.getFont();
-        image.setFont(font.deriveFont(24.0F));
+        image.setFont(font.deriveFont(this.fontSize));
         image.setColor(Color.WHITE);
         image.drawString(mensagem, 30, 30);
     }
@@ -33,5 +42,9 @@ public class Display  extends Actor
     
     public void setMensagem(String mensagem){
         this.mensagem = mensagem;
+    }
+    
+    public void setFontSize(float size){
+        this.fontSize = size;
     }
 }

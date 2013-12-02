@@ -10,12 +10,12 @@ public class Loja extends World
     
     public Loja()
     {    
-        super(480, 620, 1); 
+        super(680, 720, 1); 
         int j = 0;
         for(int i = 170; i <= 380; i = i+70){
             this.addObject(maquina.getBotoes()[j++], 500, i);
         }
-        this.addObject((Actor) maquina, 120, 360);
+        this.addObject((Actor) maquina, 260, 360);
         int MAX = 5;
         for(int i = 0; i< MAX; i++)
         {

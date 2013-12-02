@@ -5,13 +5,13 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
 {
     private Caixa caixa = new Caixa();
     private Estoque estoque =  new Estoque();
-    private Display display = new Display("");
+    private Display display = new Display("recButton.png","", 0);
     private boolean addingCoins = false;
     //cria 4 botoes, um para cada refrigerante
-    private Button botao0 = new Button("Coca-Cola, R$2,50", 0),
-                   botao1 = new Button("Fanta Uva, R$2,20", 1),
-                   botao2 = new Button("Antártica, R$2,25", 2), 
-                   botao3 = new Button("Dore, R$2,00", 3);
+    private Button botao0 = new Button("Coca-Cola, R$2,50",0, 0),
+                   botao1 = new Button("Fanta Uva, R$2,20",0, 1),
+                   botao2 = new Button("Antártica, R$2,25",0, 2), 
+                   botao3 = new Button("Dore, R$2,00",0, 3);
 
     // agrupa os botoes criados
     Button[] botoes = new Button[4];
@@ -43,7 +43,7 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
     
     public void devolverTroco(Refrigerante r){
         int devolver = caixa.getSaldoCompra();
-        if( devolver > r.getPreco())
+        if( devolver >= r.getPreco())
             devolver -= r.getPreco();
         
         Queue<Moeda> moedas = caixa.disponibilizarMoedas(devolver);
