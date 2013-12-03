@@ -17,4 +17,6 @@ comment7.params=
 comment7.target=boolean\ isAddingCoins()
 comment8.params=r
 comment8.target=void\ devolverTroco(Refrigerante)
-numComments=9
+comment9.params=
+comment9.target=CoinColector\ getCoinColector()
+numComments=10

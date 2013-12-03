@@ -10,12 +10,16 @@ public class Loja extends World
     
     public Loja()
     {    
-        super(680, 720, 1); 
-        int j = 0;
-        for(int i = 170; i <= 380; i = i+70){
-            this.addObject(maquina.getBotoes()[j++], 500, i);
-        }
-        this.addObject((Actor) maquina, 260, 360);
+        super(580, 580, 1); 
+        this.addObject((Actor) maquina, 245, 290);
+        int x = 170, y = 170, dist =150;
+        //adiciona botões à posição desejada
+            this.addObject(maquina.getBotoes()[0], x, y);
+            this.addObject(maquina.getBotoes()[1], x, y + dist);
+            this.addObject(maquina.getBotoes()[2], x + dist, y);
+            this.addObject(maquina.getBotoes()[3], x + dist, y + dist);
+        
+        this.addObject(maquina.getCoinColector(), 245, 62);
         int MAX = 5;
         for(int i = 0; i< MAX; i++)
         {
@@ -24,13 +28,14 @@ public class Loja extends World
                 this.adicionarMoeda(moeda);
             }
         }
-        this.addObject(maquina.getDisplay(), 240, 600);
+        
+        this.addObject(maquina.getDisplay(), 245, 470);
     }
     
     public void act(){
         gerenciarBotoes();
         if(maquina.isAddingCoins())
-            maquina.getDisplay().setMensagem("Saldo: " + maquina.getCaixa().getSaldoCompraToString());
+            maquina.getDisplay().setMensagem(Mensagem.saldoCliente(this.maquina));
     }
     
     public void gerenciarBotoes(){
@@ -40,23 +45,27 @@ public class Loja extends World
     }
     
     public void adicionarMoeda(Moedas moeda){
-        int x = Greenfoot.getRandomNumber(100) + 320,
-            y = Greenfoot.getRandomNumber(80) + 30;
+        int x = 500, y = 40;
             Moeda m = null;
         switch(moeda){
             case dez:
                 m = new Moeda(10);
+                y *= 1;
                 break;
             case vintecinco:
                 m = new Moeda(25);
+                y *= 2;
                 break;
             case cinquenta:
                 m = new Moeda(50);
+                y *= 3;
                 break;
             default:
                 m = new Moeda(100);
+                y *= 4;
                 break;
         }
+        y +=30;
         this.addObject(m, x,y);    
     }
     

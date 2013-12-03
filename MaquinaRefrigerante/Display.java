@@ -4,11 +4,12 @@ import java.awt.Font;
 
 public class Display  extends Actor
 {
-   String imagem = "squareButton.png";
-   String mensagem;
-   float fontSize = 24.0F;
-
-    public Display(String imagem, String mensagem , float fontSize)
+   private String imagem = "squareButton.png";
+   private String[] mensagem = {"", ""};
+   private float fontSize = 22.0F;
+   private int initPosX = 90;
+   private int initPosY = 10;
+    public Display(String imagem, String[] mensagem , float fontSize)
     {
         if(imagem !=null)
             this.imagem = imagem;
@@ -24,7 +25,14 @@ public class Display  extends Actor
         Font font = image.getFont();
         image.setFont(font.deriveFont(this.fontSize));
         image.setColor(Color.WHITE);
-        image.drawString(mensagem, 30, 30);
+        int pos = initPosX;
+        if(this.mensagem != null)
+            for(String msg : this.mensagem){
+                if( msg != null){
+                    image.drawString(msg, initPosY, pos);
+                    pos +=30;
+                }
+            }
     }
     
     public void act(){
@@ -34,13 +42,22 @@ public class Display  extends Actor
     public void update(){
         GreenfootImage image = new GreenfootImage(this.imagem);
         Font font = image.getFont();
-        image.setFont(font.deriveFont(24.0F));
-        image.setColor(Color.WHITE);
-        image.drawString(this.mensagem, 30, 30);
+        image.setFont(font.deriveFont(this.fontSize));
+        image.setColor(Color.BLACK);
+        int pos = initPosX;
+        if(this.mensagem != null)
+        for(String msg : this.mensagem){
+            if(msg!=null){
+                image.drawString(msg, initPosY, pos);
+                pos +=30;
+            }
+        }
+
         setImage(image);
+        this.getImage().setTransparency(50);
     }
     
-    public void setMensagem(String mensagem){
+    public void setMensagem(String[] mensagem){
         this.mensagem = mensagem;
     }
     

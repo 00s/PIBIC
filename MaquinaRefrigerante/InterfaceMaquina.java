@@ -11,6 +11,7 @@ public interface InterfaceMaquina
     public void setAddingCoins(boolean b);
     public boolean isAddingCoins();
     public void devolverTroco(Refrigerante r);
+    public CoinColector getCoinColector();
     //public void gerenciaBotoes();
     //public boolean entregarRefrigerante();
 }
