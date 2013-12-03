@@ -12,6 +12,7 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
     private Estoque estoque =  new Estoque();
     private Display display = new Display("recButton.png",null, 0);
     private boolean addingCoins = false;
+    private GreenfootSound coin = new GreenfootSound("coin.mp3");
     //cria 4 botoes, um para cada refrigerante
     private Button botao0 = new Button(refriCoca,0, 0),
                    botao1 = new Button(refriFanta,0, 1),
@@ -42,6 +43,9 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
                 caixa.adicionarMoedaCliente(m);
                 this.getWorld().removeObject(m);
                 addingCoins = true;
+                if(coin.isPlaying())
+                    coin.stop();
+                this.coin.play();
             }
         }
         this.coinCol.zerar();
