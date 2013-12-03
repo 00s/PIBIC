@@ -7,15 +7,16 @@ public class Display  extends Actor
    private String imagem = "squareButton.png";
    private String[] mensagem = {"", ""};
    private float fontSize = 22.0F;
-   private int initPosX = 90;
-   private int initPosY = 10;
+   private final int initPosX = 90;
+   private final int initPosY = 10;
+   private final int transparence = 70;
     public Display(String imagem, String[] mensagem , float fontSize)
     {
         if(imagem !=null)
             this.imagem = imagem;
             
         this.setImage(this.imagem);
-        this.getImage().setTransparency(50);
+        this.getImage().setTransparency(transparence);
         if (fontSize != 0)
            this.fontSize = fontSize;
            
@@ -54,7 +55,7 @@ public class Display  extends Actor
         }
 
         setImage(image);
-        this.getImage().setTransparency(50);
+        this.getImage().setTransparency(transparence);
     }
     
     public void setMensagem(String[] mensagem){

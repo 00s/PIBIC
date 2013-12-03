@@ -15,7 +15,7 @@ public class CoinColector extends Actor
     private LinkedList<Moeda> moedas = new LinkedList<Moeda>();
     
     public CoinColector(){
-        this.getImage().setTransparency(50);
+        this.getImage().setTransparency(60);
     }
    
     public void act() 

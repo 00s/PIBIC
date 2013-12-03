@@ -56,8 +56,8 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
         while(!moedas.isEmpty()){
             this.getWorld().addObject(
                 moedas.poll(), 
-                Greenfoot.getRandomNumber(100) + 50,
-                Greenfoot.getRandomNumber(80) + 30
+                Greenfoot.getRandomNumber(30) + 460,
+                Greenfoot.getRandomNumber(80) + 460
             );
         }
     }
