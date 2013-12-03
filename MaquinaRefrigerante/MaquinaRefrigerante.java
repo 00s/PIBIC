@@ -3,15 +3,20 @@ import java.util.*;
 
 public class MaquinaRefrigerante extends Actor implements InterfaceMaquina 
 {
+    private String[] refriCoca = {"Coca-Cola", "R$2,50"},
+                   refriFanta = {"Fanta Uva", "R$2,20"},
+                   refriAntartica = {"Antártica", "R$2,25"},
+                   refriDore = {"Dore", "R$2,00"};
     private Caixa caixa = new Caixa();
+    private CoinColector coinCol = new CoinColector();
     private Estoque estoque =  new Estoque();
-    private Display display = new Display("recButton.png","", 0);
+    private Display display = new Display("recButton.png",null, 0);
     private boolean addingCoins = false;
     //cria 4 botoes, um para cada refrigerante
-    private Button botao0 = new Button("Coca-Cola, R$2,50",0, 0),
-                   botao1 = new Button("Fanta Uva, R$2,20",0, 1),
-                   botao2 = new Button("Antártica, R$2,25",0, 2), 
-                   botao3 = new Button("Dore, R$2,00",0, 3);
+    private Button botao0 = new Button(refriCoca,0, 0),
+                   botao1 = new Button(refriFanta,0, 1),
+                   botao2 = new Button(refriAntartica,0, 2), 
+                   botao3 = new Button(refriDore,0, 3);
 
     // agrupa os botoes criados
     Button[] botoes = new Button[4];
@@ -31,7 +36,7 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
 
     public void coletaMoedas()
     {
-        List<Moeda> moedas = this.getObjectsInRange(100, Moeda.class);
+        List<Moeda> moedas = this.coinCol.getMoedas();
         for( Moeda m : moedas){
             if(Greenfoot.mouseDragEnded(m)){
                 caixa.adicionarMoedaCliente(m);
@@ -39,6 +44,7 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
                 addingCoins = true;
             }
         }
+        this.coinCol.zerar();
     }
     
     public void devolverTroco(Refrigerante r){
@@ -62,6 +68,10 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
     
     public void setAddingCoins(boolean value){
         this.addingCoins = value;
+    }
+       
+    public CoinColector getCoinColector(){
+        return this.coinCol;
     }
     
     public Estoque getEstoque(){
