@@ -20,22 +20,21 @@ public class Loja extends World
             this.addObject(maquina.getBotoes()[3], x + dist, y + dist);
         
         this.addObject(maquina.getCoinColector(), 245, 62);
-        int MAX = 5;
-        for(int i = 0; i< MAX; i++)
-        {
+        
             for( Moedas moeda : Moedas.values())
             {
                 this.adicionarMoeda(moeda);
             }
-        }
         
         this.addObject(maquina.getDisplay(), 245, 470);
     }
     
     public void act(){
         gerenciarBotoes();
-        if(maquina.isAddingCoins())
+        if(maquina.isAddingCoins()){
             maquina.getDisplay().setMensagem(Mensagem.saldoCliente(this.maquina));
+            adicionarMoeda(maquina.getMoedaColetada());
+        }
     }
     
     public void gerenciarBotoes(){

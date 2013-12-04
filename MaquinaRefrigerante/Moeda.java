@@ -3,11 +3,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Moeda extends Actor{
     private final int valor;
     private final String imagem;
-
+    
+    
     public void act(){
         if( Greenfoot.mouseDragged(this) )
                 this.setLocation(Greenfoot.getMouseInfo().getX(), Greenfoot.getMouseInfo().getY());
     }
+    
     
     public Moeda(int valor)
     {
@@ -36,5 +38,7 @@ public class Moeda extends Actor{
      public int getValor(){
         return this.valor;
     }
+    
+    
     
 }

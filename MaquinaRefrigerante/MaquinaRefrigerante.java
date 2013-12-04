@@ -18,7 +18,10 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
                    botao1 = new Button(refriFanta,0, 1),
                    botao2 = new Button(refriAntartica,0, 2), 
                    botao3 = new Button(refriDore,0, 3);
+    private Moeda moedaColetada = null;
 
+                   
+    
     // agrupa os botoes criados
     Button[] botoes = new Button[4];
 
@@ -41,8 +44,10 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
         for( Moeda m : moedas){
             if(Greenfoot.mouseDragEnded(m)){
                 caixa.adicionarMoedaCliente(m);
+                this.setMoedaColetada(m);
                 this.getWorld().removeObject(m);
                 addingCoins = true;
+                
                 if(coin.isPlaying())
                     coin.stop();
                 this.coin.play();
@@ -64,6 +69,14 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
                 Greenfoot.getRandomNumber(80) + 460
             );
         }
+    }
+    
+    public Moeda getMoedaColetada(){
+        return this.moedaColetada;
+    }
+    
+     void setMoedaColetada(Moeda m){
+        this.moedaColetada = m;
     }
     
     public boolean isAddingCoins(){

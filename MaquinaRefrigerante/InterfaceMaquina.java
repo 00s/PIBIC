@@ -12,6 +12,9 @@ public interface InterfaceMaquina
     public boolean isAddingCoins();
     public void devolverTroco(Refrigerante r);
     public CoinColector getCoinColector();
+    
+    public Moeda getMoedaColetada();
+    public void setMoedaColetada(Moeda m);
     //public void gerenciaBotoes();
     //public boolean entregarRefrigerante();
 }
