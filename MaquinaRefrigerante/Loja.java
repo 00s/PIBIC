@@ -33,7 +33,7 @@ public class Loja extends World
         gerenciarBotoes();
         if(maquina.isAddingCoins()){
             maquina.getDisplay().setMensagem(Mensagem.saldoCliente(this.maquina));
-            adicionarMoeda(maquina.getMoedaColetada());
+            
         }
     }
     

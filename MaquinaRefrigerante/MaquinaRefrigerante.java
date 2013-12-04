@@ -44,7 +44,7 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
         for( Moeda m : moedas){
             if(Greenfoot.mouseDragEnded(m)){
                 caixa.adicionarMoedaCliente(m);
-                this.setMoedaColetada(m);
+                
                 this.getWorld().removeObject(m);
                 addingCoins = true;
                 
@@ -71,13 +71,7 @@ public class MaquinaRefrigerante extends Actor implements InterfaceMaquina
         }
     }
     
-    public Moeda getMoedaColetada(){
-        return this.moedaColetada;
-    }
-    
-     void setMoedaColetada(Moeda m){
-        this.moedaColetada = m;
-    }
+  
     
     public boolean isAddingCoins(){
         return this.addingCoins;

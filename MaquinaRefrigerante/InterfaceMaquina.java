@@ -13,8 +13,6 @@ public interface InterfaceMaquina
     public void devolverTroco(Refrigerante r);
     public CoinColector getCoinColector();
     
-    public Moeda getMoedaColetada();
-    public void setMoedaColetada(Moeda m);
     //public void gerenciaBotoes();
     //public boolean entregarRefrigerante();
 }
