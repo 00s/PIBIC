@@ -1,10 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class interruptor here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Adolfo Melo) 
+ * @version (20.01.2014)
  */
 public class Interruptor extends Actor
 {
