@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=imagem\ mensagem\ fontSize
+comment0.target=Display(java.lang.String,\ java.lang.String[],\ float)
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ update()
+comment3.params=mensagem
+comment3.target=void\ setMensagem(java.lang.String[])
+comment4.params=size
+comment4.target=void\ setFontSize(float)
+numComments=5

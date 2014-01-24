@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=m
+comment0.target=void\ adicionarMoedaCliente(Moeda)
+comment1.params=valor
+comment1.target=java.util.LinkedList\ disponibilizarMoedas(int)
+comment2.params=
+comment2.target=int\ getSaldoCompra()
+comment3.params=
+comment3.target=void\ zerarSaldoCompra()
+comment4.params=valor
+comment4.target=java.lang.String\ intToString(int)
+comment5.params=
+comment5.target=java.lang.String\ getSaldoCompraToString()
+numComments=6
