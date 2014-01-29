@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Vencedor()
+comment1.params=vencedor\ stringlength
+comment1.target=Vencedor(java.lang.String,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ updateImage()
+comment3.text=\n\ Make\ the\ image\n
+numComments=4

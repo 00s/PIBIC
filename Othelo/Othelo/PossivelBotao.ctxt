@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=cor\ direcoes
+comment0.target=PossivelBotao(Cor,\ java.util.ArrayList)
+comment0.text=\n\ Act\ -\ do\ whatever\ the\ PossivelBotao\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=cor
+comment2.target=void\ setCor(Cor)
+comment3.params=
+comment3.target=Cor\ getCor()
+comment4.params=
+comment4.target=java.util.ArrayList\ getDirecoes()
+numComments=5

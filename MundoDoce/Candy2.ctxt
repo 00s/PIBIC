@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=i
+comment0.target=Candy2(int)
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ monster\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.params=
+comment2.target=void\ move()
+comment3.params=
+comment3.target=boolean\ canMoveX()
+comment4.params=
+comment4.target=boolean\ canMoveY()
+numComments=5

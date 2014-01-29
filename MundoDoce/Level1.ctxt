@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=personagem
+comment0.target=Level1(int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Fase1.\n\ \n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ subtractLife()
+comment3.params=
+comment3.target=void\ addCandy()
+comment4.params=
+comment4.target=void\ gameOver()
+numComments=5

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=personagem
+comment0.target=Player(int)
+comment0.text=\n\ Act\ -\ do\ whatever\ the\ boy\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ goRight()
+comment3.params=
+comment3.target=void\ goLeft()
+comment4.params=
+comment4.target=void\ eat()
+comment5.params=
+comment5.target=void\ getSick()
+comment6.params=
+comment6.target=void\ inertia()
+numComments=7
