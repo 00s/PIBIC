@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=nomeVariavel
+comment0.target=Variavel(java.lang.String)
+comment1.params=
+comment1.target=void\ act()
+comment2.params=up
+comment2.target=void\ update(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getTexto()
+numComments=4
